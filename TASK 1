@@ -1,0 +1,60 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Function to ask a question and return if the answer is correct
+bool askQuestion(string question, string options[], string correctAnswer) {
+    string userAnswer;
+    cout << question << endl;
+    for (int i = 0; i < 4; i++) {
+        cout << char('A' + i) << ". " << options[i] << endl;
+    }
+    cout << "Your answer: ";
+    cin >> userAnswer;
+    return (userAnswer == correctAnswer);
+}
+
+int main() {
+    string questions[] = {
+        "What is the capital of France?",
+        "Which planet is known as the Red Planet?",
+        "Who wrote 'To Kill a Mockingbird'?",
+        "What is the largest ocean on Earth?"
+    };
+       cout<<sizeof(questions);
+
+    string options[][4] = {
+        {"Berlin", "Madrid", "Paris", "Rome"},
+        {"Earth", "Mars", "Jupiter", "Saturn"},
+        {"Harper Lee", "Mark Twain", "J.K. Rowling", "Jane Austen"},
+        {"Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"}
+    };
+
+    string answers[] = {"C", "B", "A", "D"};
+
+    int score = 0;
+    int totalQuestions = sizeof(questions) / sizeof(questions[0]);
+
+    for (int i = 0; i < totalQuestions; i++) {
+        if (askQuestion(questions[i], options[i], answers[i])) {
+            cout << "Correct!" << endl;
+            score++;
+        } else {
+            cout << "Wrong! The correct answer is " << answers[i] << "." << endl;
+        }
+        cout << endl;
+    }
+
+    cout << "You got " << score << " out of " << totalQuestions << " correct." << endl;
+
+    // Provide feedback based on the user's score
+    if (score == totalQuestions) {
+        cout << "Excellent! You got all the answers correct!" << endl;
+    } else if (score >= totalQuestions / 2) {
+        cout << "Good job! You got more than half correct." << endl;
+    } else {
+        cout << "Better luck next time. Keep practicing!" << endl; 
+    }
+     cout<<sizeof(questions);
+    return 0;
+}
