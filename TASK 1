@@ -21,7 +21,7 @@ int main() {
         "Who wrote 'To Kill a Mockingbird'?",
         "What is the largest ocean on Earth?"
     };
-       cout<<sizeof(questions);
+       
 
     string options[][4] = {
         {"Berlin", "Madrid", "Paris", "Rome"},
