@@ -36,3 +36,7 @@ The objective of this project is to develop a quiz game using C++. The game will
 #### Conclusion
 
 This project provided an excellent opportunity to apply and enhance C++ programming skills through the development of a functional quiz game. It demonstrated the practical application of software development concepts such as game design, programming, debugging, and user interaction. The feedback collected from users will be invaluable for refining the game, ensuring it is both enjoyable and educational. Overall, this project undersc
+
+
+
+![Screenshot (827)](https://github.com/Dakshprajapat1212/CODTECH-TASK1/assets/172480550/a2d955e0-2db6-47c5-a3cd-76ba1aff32c3)
