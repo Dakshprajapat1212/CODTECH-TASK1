@@ -10,7 +10,7 @@ Certainly! Here is the updated overview with the "Technology Used" and "Conclusi
 
 *Domain:* C++ Programming  
 *Duration:* May to June 2024  
-*Mentor:* SRAVANI GOUNI  
+*Mentor:* Santhosh kumar
 
 ### Overview of the Project
 
